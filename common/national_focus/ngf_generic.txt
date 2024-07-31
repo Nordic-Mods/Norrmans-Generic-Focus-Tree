@@ -274,7 +274,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
 		relative_position_id = GENERIC_political_focus_one
-		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_empower_the_unions focus = GENERIC_political_democracy_one }
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_democracy_one }
 		x = 2
 		y = 1
 		cost = 10
