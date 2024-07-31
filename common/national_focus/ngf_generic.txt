@@ -255,9 +255,10 @@ focus_tree = {
 		id = GENERIC_political_democracy_one
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
+		relative_position_id = GENERIC_political_focus_one
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_strengthen_paramilitaries focus = GENERIC_political_neutrality_one }
 		x = -2
 		y = 1
-		relative_position_id = GENERIC_political_focus_one
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -272,9 +273,10 @@ focus_tree = {
 		id = GENERIC_political_neutrality_one
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
+		relative_position_id = GENERIC_political_focus_one
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_empower_the_unions focus = GENERIC_political_democracy_one }
 		x = 2
 		y = 1
-		relative_position_id = GENERIC_political_focus_one
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -289,9 +291,10 @@ focus_tree = {
 		id = GENERIC_strengthen_paramilitaries
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GENERIC_political_focus_one }
+		relative_position_id = GENERIC_political_focus_one
+		mutually_exclusive = { focus = GENERIC_empower_the_unions focus = GENERIC_political_democracy_one focus = GENERIC_political_neutrality_one }
 		x = 7
 		y = 1
-		relative_position_id = GENERIC_political_focus_one
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -303,10 +306,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_communist_one
+		id = GENERIC_empower_the_unions
 		icon = GFX_goal_support_communism
 		relative_position_id = GENERIC_political_focus_one
 		prerequisite = { focus = GENERIC_political_focus_one }
+		mutually_exclusive = { focus = GENERIC_political_democracy_one focus = GENERIC_political_neutrality_one focus = GENERIC_strengthen_paramilitaries }
 		x = -7
 		y = 1
 		cost = 10
@@ -315,28 +319,59 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 150
+			add_ideas = GENERIC_empower_the_unions_idea
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
-		id = GENERIC_political_communist_two
-		icon = GFX_focus_generic_soviet_politics
-		relative_position_id = GENERIC_political_communist_one
-		prerequisite = { focus = GENERIC_political_communist_one }
+		id = GENERIC_overthrow_the_government
+		icon = GFX_focus_SWE_socialist_reforms
+		relative_position_id = GENERIC_empower_the_unions
+		prerequisite = { focus = GENERIC_empower_the_unions }
 		x = 0
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+
+		available = {
+			communism > 0.4
+		}
 		
 		completion_reward = {
-			add_political_power = 150
+			if = {
+				limit = {
+					NOT = {
+						has_government = communism
+					}
+				}
+				set_politics = {
+					ruling_party = communism
+				}
+			}
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 15
+			}
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_one
+		id = GENERIC_vanguard_of_the_revolution
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		relative_position_id = GENERIC_political_communist_two
-		prerequisite = { focus = GENERIC_political_communist_two }
+		relative_position_id = GENERIC_overthrow_the_government
+		prerequisite = { focus = GENERIC_overthrow_the_government }
 		mutually_exclusive = { focus = GENERIC_political_national_communism_one }
 		x = -1
 		y = 1
@@ -345,14 +380,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 150
+			set_country_leader_ideology = leninism
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_two
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_one
-		prerequisite = { focus = GENERIC_political_vanguardism_one }
+		id = GENERIC_stabilize_the_new_government
+		icon = GFX_focus_generic_soviet_politics
+		relative_position_id = GENERIC_vanguard_of_the_revolution
+		prerequisite = { focus = GENERIC_vanguard_of_the_revolution }
 		x = -1
 		y = 1
 		cost = 10
@@ -366,8 +401,8 @@ focus_tree = {
 	focus = {
 		id = GENERIC_political_vanguardism_three
 		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_two
-		prerequisite = { focus = GENERIC_political_vanguardism_two }
+		relative_position_id = GENERIC_stabilize_the_new_government
+		prerequisite = { focus = GENERIC_stabilize_the_new_government }
 		x = 0
 		y = 1
 		cost = 10
@@ -379,8 +414,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_four
-		icon = GFX_goal_generic_demand_territory
+		id = GENERIC_the_country_red_army
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		relative_position_id = GENERIC_political_vanguardism_three
 		prerequisite = { focus = GENERIC_political_vanguardism_three }
 		x = -1
@@ -411,9 +446,9 @@ focus_tree = {
 	focus = {
 		id = GENERIC_political_national_communism_one
 		icon = GFX_focus_prc_agrarian_socialism
-		relative_position_id = GENERIC_political_communist_two
-		prerequisite = { focus = GENERIC_political_communist_two }
-		mutually_exclusive = { focus = GENERIC_political_vanguardism_one }
+		relative_position_id = GENERIC_overthrow_the_government
+		prerequisite = { focus = GENERIC_overthrow_the_government }
+		mutually_exclusive = { focus = GENERIC_vanguard_of_the_revolution }
 		x = 1
 		y = 1
 		cost = 10
@@ -538,7 +573,7 @@ focus_tree = {
 		id = GENERIC_political_communist_three
 		icon = GFX_goal_generic_soviet_construction
 		relative_position_id = GENERIC_political_national_communism_one
-		prerequisite = { focus = GENERIC_political_vanguardism_one focus = GENERIC_political_national_communism_one }
+		prerequisite = { focus = GENERIC_vanguard_of_the_revolution focus = GENERIC_political_national_communism_one }
 		x = -1
 		y = 1
 		cost = 10
