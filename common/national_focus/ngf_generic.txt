@@ -336,7 +336,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_overthrow_the_government
-		icon = GFX_focus_SWE_socialist_reforms
+		icon = GFX_focus_SWE_organize_a_putsch
 		relative_position_id = GENERIC_empower_the_unions
 		prerequisite = { focus = GENERIC_empower_the_unions }
 		x = 0
@@ -382,11 +382,12 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_vanguard_of_the_revolution_sub_ideology_change_tt
 			set_country_leader_ideology = leninism
+			
 		}
 	}
 	focus = {
 		id = GENERIC_stabilize_the_new_government
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SWE_socialist_reforms
 		relative_position_id = GENERIC_vanguard_of_the_revolution
 		prerequisite = { focus = GENERIC_vanguard_of_the_revolution }
 		x = -1
@@ -400,8 +401,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_three
-		icon = GFX_goal_generic_demand_territory
+		id = GENERIC_socialist_reeducation_campaign
+		icon = GFX_focus_NOR_moscows_education_centers
 		relative_position_id = GENERIC_stabilize_the_new_government
 		prerequisite = { focus = GENERIC_stabilize_the_new_government }
 		x = 0
@@ -417,8 +418,8 @@ focus_tree = {
 	focus = {
 		id = GENERIC_the_country_red_army
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		relative_position_id = GENERIC_political_vanguardism_three
-		prerequisite = { focus = GENERIC_political_vanguardism_three }
+		relative_position_id = GENERIC_socialist_reeducation_campaign
+		prerequisite = { focus = GENERIC_socialist_reeducation_campaign }
 		x = -1
 		y = 1
 		cost = 10
@@ -432,8 +433,8 @@ focus_tree = {
 	focus = {
 		id = GENERIC_political_vanguardism_five
 		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_three
-		prerequisite = { focus = GENERIC_political_vanguardism_three }
+		relative_position_id = GENERIC_socialist_reeducation_campaign
+		prerequisite = { focus = GENERIC_socialist_reeducation_campaign }
 		x = 1
 		y = 1
 		cost = 10
