@@ -382,7 +382,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_vanguard_of_the_revolution_sub_ideology_change_tt
 			set_country_leader_ideology = leninism
-			
+			add_threat = 1
+			add_political_power = 50
 		}
 	}
 	focus = {
