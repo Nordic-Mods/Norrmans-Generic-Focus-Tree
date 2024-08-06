@@ -15,5 +15,35 @@ ideas = {
                 political_power_factor = -0.2
 			}
         }
+        GENERIC_stabilize_the_new_government_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                democracy_drift = -0.1
+                fascism_drift = -0.1
+                neutrality_drift = -0.1
+                stability_factor = -0.05
+            }
+        }
+        GENERIC_socialist_reeducation_campaign_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                communism_drift = 0.1
+                stability_weekly = 0.02
+            }
+        }
     }
 }

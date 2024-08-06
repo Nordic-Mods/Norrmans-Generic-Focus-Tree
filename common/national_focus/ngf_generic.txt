@@ -398,7 +398,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 150
+			stability_factor = -0.1
+			add_timed_idea = {
+				days = 140
+				idea = GENERIC_stabilize_the_new_government_idea
+			}
 		}
 	}
 	focus = {
@@ -413,7 +417,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 150
+			add_timed_idea = {
+				days = 140
+				idea = GENERIC_socialist_reeducation_campaign_idea
+			}
 		}
 	}
 	focus = {

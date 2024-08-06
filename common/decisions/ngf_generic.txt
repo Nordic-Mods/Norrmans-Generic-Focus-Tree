@@ -1,0 +1,5 @@
+GENERIC_the_country_red_army_decision_category = {
+    GENERIC_establish_the_red_army = {
+        
+    }
+}
