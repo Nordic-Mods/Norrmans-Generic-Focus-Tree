@@ -1,5 +1,5 @@
 ﻿l_english:
-###### Focuses - Communism
+ ###### Focuses - Communism
  GENERIC_empower_the_unions:0 "Empower the Unions"
  GENERIC_empower_the_unions_desc:0 ""
  GENERIC_overthrow_the_government:0 "Overthrow the Government"
@@ -16,19 +16,11 @@
  GENERIC_the_country_red_army_desc:0 ""
  GENERIC_socialist_industrial_planning:0 "Socialist Industrial Planning"
  GENERIC_socialist_industrial_planning_def:0 ""
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
- GENERIC_
+
+ GENERIC_empower_the_unions_idea:0 "Empower the Unions"
+ GENERIC_stabilize_the_new_government_idea:0 "Stabilize the New Government"
+ GENERIC_socialist_reeducation_campaign_idea:0 "Socialist Re-education Campaign"
+ GENERIC_socialist_industrial_planning_idea:0 "Socialist Industrial Planning"
+ GENERIC_state_security_apparatus_idea:0 "State Security Apparatus"
+
+ GENERIC_the_country_red_army_decision_category:0 "The [ROOT.GetAdjective] Red Army"

@@ -25,10 +25,8 @@ ideas = {
             picture = generic_communism_drift_bonus
 
             modifier = {
-                democratic_drift = -0.1
-                fascism_drift = -0.1
-                neutrality_drift = -0.1
-                stability_factor = -0.05
+                communism_drift = 0.1
+                stability_weekly = 0.02
             }
         }
         GENERIC_socialist_reeducation_campaign_idea = {
@@ -41,8 +39,39 @@ ideas = {
             picture = generic_communism_drift_bonus
 
             modifier = {
-                communism_drift = 0.1
-                stability_weekly = 0.02
+                democratic_drift = -0.1
+                fascism_drift = -0.1
+                neutrality_drift = -0.1
+                stability_factor = -0.05
+            }
+        }
+        GENERIC_socialist_industrial_planning_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                stability_factor = -0.1
+                conscription_factor = -0.15
+                production_speed_buildings_factor = 0.25
+            }
+        }
+        GENERIC_state_security_apparatus_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_gain = 0.10
             }
         }
     }
