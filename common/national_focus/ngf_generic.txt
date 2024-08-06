@@ -372,7 +372,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		relative_position_id = GENERIC_overthrow_the_government
 		prerequisite = { focus = GENERIC_overthrow_the_government }
-		mutually_exclusive = { focus = GENERIC_political_national_communism_one }
+		mutually_exclusive = { focus = GENERIC_communism_at_home }
 		x = -1
 		y = 1
 		cost = 10
@@ -398,10 +398,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			stability_factor = -0.1
+			add_stability = -0.1
 			add_timed_idea = {
 				days = 140
-				idea = GENERIC_stabilize_the_new_government_idea
+				idea = GENERIC_socialist_reeducation_campaign_idea
 			}
 		}
 	}
@@ -419,7 +419,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				days = 140
-				idea = GENERIC_socialist_reeducation_campaign_idea
+				idea = GENERIC_stabilize_the_new_government_idea
 			}
 		}
 	}
@@ -436,6 +436,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 150
+			unlock_decision_category_tooltip = GENERIC_the_country_red_army_decision_category
 		}
 	}
 	focus = {
@@ -454,7 +455,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_national_communism_one
+		id = GENERIC_communism_at_home
 		icon = GFX_focus_prc_agrarian_socialism
 		relative_position_id = GENERIC_overthrow_the_government
 		prerequisite = { focus = GENERIC_overthrow_the_government }
@@ -580,10 +581,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_communist_three
+		id = GENERIC_socialist_industrial_planning
 		icon = GFX_goal_generic_soviet_construction
-		relative_position_id = GENERIC_political_national_communism_one
-		prerequisite = { focus = GENERIC_vanguard_of_the_revolution focus = GENERIC_political_national_communism_one }
+		relative_position_id = GENERIC_communism_at_home
+		prerequisite = { focus = GENERIC_vanguard_of_the_revolution focus = GENERIC_communism_at_home }
 		x = -1
 		y = 1
 		cost = 10
