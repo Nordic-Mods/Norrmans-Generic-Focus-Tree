@@ -440,7 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GENERIC_state_security_apparatus
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_SOV_the_last_purge
 		relative_position_id = GENERIC_socialist_reeducation_campaign
 		prerequisite = { focus = GENERIC_socialist_reeducation_campaign }
 		x = 1
