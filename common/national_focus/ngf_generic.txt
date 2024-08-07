@@ -350,6 +350,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			set_rule = {
+				can_join_faction = no
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -501,8 +504,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_seven
-		icon = GFX_goal_generic_demand_territory
+		id = GENERIC_looking_abroad_once_more
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		relative_position_id = GENERIC_state_security_apparatus
 		prerequisite = { focus = GENERIC_state_security_apparatus }
 		x = 0
@@ -516,11 +519,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_alliance_one
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_seven
-		prerequisite = { focus = GENERIC_political_vanguardism_seven }
-		mutually_exclusive = { focus = GENERIC_political_vanguardism_faction_one }
+		id = GENERIC_the_communist_cause
+		icon = GFX_goal_support_communism
+		relative_position_id = GENERIC_looking_abroad_once_more
+		prerequisite = { focus = GENERIC_looking_abroad_once_more }
+		mutually_exclusive = { focus = GENERIC_our_internationale }
 		x = -1
 		y = 1
 		cost = 5
@@ -532,10 +535,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_alliance_two
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_alliance_one
-		prerequisite = { focus = GENERIC_political_vanguardism_alliance_one }
+		id = GENERIC_strengthen_our_alliance
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		relative_position_id = GENERIC_the_communist_cause
+		prerequisite = { focus = GENERIC_the_communist_cause }
 		x = -1
 		y = 1
 		cost = 10
@@ -547,11 +550,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_faction_one
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_seven
-		prerequisite = { focus = GENERIC_political_vanguardism_seven }
-		mutually_exclusive = { focus = GENERIC_political_vanguardism_alliance_one }
+		id = GENERIC_our_internationale
+		icon = GFX_focus_ETH_callout_to_the_world
+		relative_position_id = GENERIC_looking_abroad_once_more
+		prerequisite = { focus = GENERIC_looking_abroad_once_more }
+		mutually_exclusive = { focus = GENERIC_the_communist_cause }
 		x = 1
 		y = 1
 		cost = 5
@@ -563,10 +566,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_external_one
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_faction_one
-		prerequisite = { focus = GENERIC_political_vanguardism_faction_one focus = GENERIC_political_vanguardism_alliance_one }
+		id = GENERIC_socialist_research_institute
+		icon = GFX_focus_generic_socialist_science
+		relative_position_id = GENERIC_our_internationale
+		prerequisite = { focus = GENERIC_our_internationale focus = GENERIC_the_communist_cause }
 		x = -1
 		y = 1
 		cost = 10
@@ -578,10 +581,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_faction_two
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_faction_one
-		prerequisite = { focus = GENERIC_political_vanguardism_faction_one }
+		id = GENERIC_reach_out_to_our_neighbours
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		relative_position_id = GENERIC_our_internationale
+		prerequisite = { focus = GENERIC_our_internationale }
 
 		x = 1
 		y = 1
@@ -594,11 +597,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_political_vanguardism_wargoals
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = GENERIC_political_vanguardism_faction_two
-		prerequisite = { focus = GENERIC_political_vanguardism_faction_two focus = GENERIC_political_vanguardism_alliance_two }
-		prerequisite = { focus = GENERIC_political_vanguardism_external_one }
+		id = GENERIC_spreading_the_revolution
+		icon = GFX_focus_ger_great_red_menace
+		relative_position_id = GENERIC_reach_out_to_our_neighbours
+		prerequisite = { focus = GENERIC_reach_out_to_our_neighbours focus = GENERIC_strengthen_our_alliance }
+		prerequisite = { focus = GENERIC_socialist_research_institute }
 
 		x = -2
 		y = 1
