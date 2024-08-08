@@ -32,6 +32,22 @@
  GENERIC_reach_out_to_our_neighbours_def:0 ""
  GENERIC_spreading_the_revolution:0 "Spreading the Revolution"
  GENERIC_spreading_the_revolution_def:0 ""
+ GENERIC_root_out_rightist_sympathizers:0 "Root Out Rightist Sympathizers"
+ GENERIC_root_out_rightist_sympathizers_desc:0 ""
+ GENERIC_agrarian_collectivization:0 "Agrarian Collectivization"
+ GENERIC_agrarian_collectivization_desc:0 ""
+ GENERIC_nationalization_of_heavy_industry:0 "Nationalization of Heavy Industry"
+ GENERIC_nationalization_of_heavy_industry_desc:0 ""
+ GENERIC_country_autarky:0 "[ROOT.GetAdjective] Autarky"
+ GENERIC_country_autarky_desc:0 ""
+ GENERIC_deter_foreign_aggression:0 "Deter Foreign Aggression"
+ GENERIC_deter_foreign_aggression_desc:0 ""
+ GENERIC_utilize_our_knowledge:0 "Utilize our Knowledge"
+ GENERIC_utilize_our_knowledge_desc:0 ""
+ GENERIC_every_farmer_a_soldier:0 "Every Farmer a Soldier"
+ GENERIC_every_farmer_a_soldier_desc:0 ""
+ GENERIC_anti_fascist_aggression:0 "Anti-Fascist Aggression"
+ GENERIC_anti_fascist_aggression_desc:0 ""
 
  GENERIC_empower_the_unions_idea:0 "Empower the Unions"
  GENERIC_stabilize_the_new_government_idea:0 "Stabilize the New Government"
@@ -41,3 +57,4 @@
  GENERIC_country_red_army_idea:0 "The [ROOT.GetAdjective] Red Army"
 
  GENERIC_the_country_red_army_decision_category:0 "The [ROOT.GetAdjective] Red Army"
+
