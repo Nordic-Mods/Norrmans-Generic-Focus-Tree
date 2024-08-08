@@ -61,6 +61,7 @@ ideas = {
             }
         }
         GENERIC_state_security_apparatus_idea = {
+                name = GENERIC_country_red_army_idea
             allowed = {
                 always = no
             }
@@ -72,6 +73,74 @@ ideas = {
             modifier = {
                 stability_factor = 0.05
                 political_power_gain = 0.10
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_0 = { # Base Idea
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = 0.15
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_1 = { # Improved Trainig Protocols
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = -0.1
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_2 = { # Offensive Maneuver Training
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = -0.1
+                army_attack_factor = 0.1
+                army_defence_factor = -0.1
+            }
+        }
+        GENERIC_fledgling_red_army_idea_1_3 = { # Defensive Warfare Practice
+            name = GENERIC_country_red_army_idea
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.025
+                training_time_factor = -0.1
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
             }
         }
     }

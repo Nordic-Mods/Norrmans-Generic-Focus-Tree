@@ -439,6 +439,7 @@ focus_tree = {
 		
 		completion_reward = {
 			unlock_decision_category_tooltip = GENERIC_the_country_red_army_decision_category
+			add_ideas = GENERIC_fledgling_red_army_idea_1_0
 		}
 	}
 	focus = {
@@ -485,22 +486,6 @@ focus_tree = {
 				}
 				set_technology = { tech_military_police = 1 }
 			}
-		}
-	}
-	focus = {
-		id = GENERIC_communism_at_home
-		icon = GFX_focus_prc_agrarian_socialism
-		relative_position_id = GENERIC_overthrow_the_government
-		prerequisite = { focus = GENERIC_overthrow_the_government }
-		mutually_exclusive = { focus = GENERIC_vanguard_of_the_revolution }
-		x = 1
-		y = 1
-		cost = 10
-
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 150
 		}
 	}
 	focus = {
@@ -646,6 +631,142 @@ focus_tree = {
 				days = 280
 				idea = GENERIC_socialist_industrial_planning_idea
 			}
+		}
+	}
+	focus = {
+		id = GENERIC_communism_at_home
+		icon = GFX_focus_prc_agrarian_socialism
+		relative_position_id = GENERIC_overthrow_the_government
+		prerequisite = { focus = GENERIC_overthrow_the_government }
+		mutually_exclusive = { focus = GENERIC_vanguard_of_the_revolution }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_root_out_rightist_sympathizers
+		icon = GFX_focus_SOV_military_purge
+		relative_position_id = GENERIC_communism_at_home
+		prerequisite = { focus = GENERIC_communism_at_home }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_nationalization_of_heavy_industry
+		icon = GFX_focus_generic_communist_industry
+		relative_position_id = GENERIC_root_out_rightist_sympathizers
+		prerequisite = { focus = GENERIC_root_out_rightist_sympathizers }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_agrarian_collectivization
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+		relative_position_id = GENERIC_root_out_rightist_sympathizers
+		prerequisite = { focus = GENERIC_root_out_rightist_sympathizers }
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_country_autarky
+		icon = GFX_SOV_socialist_emulation_ccp_2d_sov_compatibility
+		relative_position_id = GENERIC_agrarian_collectivization
+		prerequisite = { focus = GENERIC_agrarian_collectivization focus = GENERIC_nationalization_of_heavy_industry }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}	
+	focus = {
+		id = GENERIC_deter_foreign_aggression
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		relative_position_id = GENERIC_country_autarky
+		prerequisite = { focus = GENERIC_country_autarky }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_every_farmer_a_soldier
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		relative_position_id = GENERIC_deter_foreign_aggression
+		prerequisite = { focus = GENERIC_deter_foreign_aggression }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_utilize_our_knowledge
+		icon = GFX_SOV_the_molotov_line_ccp_2d_sov_compatibility
+		relative_position_id = GENERIC_deter_foreign_aggression
+		prerequisite = { focus = GENERIC_deter_foreign_aggression }
+		x = -1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GENERIC_anti_fascist_aggression
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		relative_position_id = GENERIC_every_farmer_a_soldier
+		prerequisite = { focus = GENERIC_every_farmer_a_soldier }
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 150
 		}
 	}
 }
