@@ -143,5 +143,21 @@ ideas = {
                 army_defence_factor = 0.1
             }
         }
+        GENERIC_office_of_foreign_affairs = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                faction_trade_opinion_factor = 0.5
+                opinion_gain_monthly_factor = 0.3
+                opinion_gain_monthly_same_ideology_factor = 0.3
+                civil_war_involvement_tension = 0.35
+            }
+        }
     }
 }

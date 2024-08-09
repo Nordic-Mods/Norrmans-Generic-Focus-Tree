@@ -500,7 +500,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 150
+			add_ideas = GENERIC_office_of_foreign_affairs
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -516,7 +517,342 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 150
+			if = { # Europe
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = Europe
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = Europe
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = GENERIC_communist_faction_europe
+					every_other_country = {
+						limit = {
+							is_in_faction = no
+							is_subject = no
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = Europe
+							}							
+						}
+						country_event = generic.5
+					}
+				}
+			}
+			if = { # North America
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = north_america
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = north_america
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = GENERIC_communist_faction_north_america
+					every_other_country = {
+						limit = {
+							is_in_faction = no
+							is_subject = no
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = north_america
+							}							
+						}
+						country_event = generic.5
+					}
+				}
+			}
+			if = { # South America
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = south_america
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = south_america
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = GENERIC_communist_faction_south_america
+					every_other_country = {
+						limit = {
+							is_in_faction = no
+							is_subject = no
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = south_america
+							}							
+						}
+						country_event = generic.5
+					}
+				}
+			}
+			if = { # Australia
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = australia
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = australia
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = GENERIC_communist_faction_australia
+					every_other_country = {
+						limit = {
+							is_in_faction = no
+							is_subject = no
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = australia
+							}							
+						}
+						country_event = generic.5
+					}
+				}
+			}
+			if = { # africa
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = africa
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = africa
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = GENERIC_communist_faction_africa
+					every_other_country = {
+						limit = {
+							is_in_faction = no
+							is_subject = no
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = africa
+							}							
+						}
+						country_event = generic.5
+					}
+				}
+			}
+			if = { # asia
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = asia
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = asia
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = GENERIC_communist_faction_asia
+					every_other_country = {
+						limit = {
+							is_in_faction = no
+							is_subject = no
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = asia
+							}							
+						}
+						country_event = generic.5
+					}
+				}
+			}			
+			if = { # middle_east
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = middle_east
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = middle_east
+							}
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+						}
+					}
+					random_country = {
+						limit = {			
+							is_subject = no
+							is_faction_leader = yes
+							has_capitulated = no
+								has_government = communism
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = GENERIC_communist_faction_middle_east
+					every_other_country = {
+						limit = {
+							is_in_faction = no
+							is_subject = no
+							has_government = communism
+							capital_scope = {
+								is_core_of = PREV
+								is_on_continent = middle_east
+							}							
+						}
+						country_event = generic.5
+					}
+				}
+			}											
 		}
 	}
 	focus = {
