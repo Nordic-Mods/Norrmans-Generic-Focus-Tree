@@ -49,6 +49,7 @@
  GENERIC_anti_fascist_aggression:0 "Anti-Fascist Aggression"
  GENERIC_anti_fascist_aggression_desc:0 ""
 
+ #National Spirits
  GENERIC_empower_the_unions_idea:0 "Empower the Unions"
  GENERIC_stabilize_the_new_government_idea:0 "Stabilize the New Government"
  GENERIC_socialist_reeducation_campaign_idea:0 "Socialist Re-education Campaign"
@@ -56,5 +57,6 @@
  GENERIC_state_security_apparatus_idea:0 "State Security Apparatus"
  GENERIC_country_red_army_idea:0 "The [ROOT.GetAdjective] Red Army"
 
+ #Decisions
  GENERIC_the_country_red_army_decision_category:0 "The [ROOT.GetAdjective] Red Army"
 
