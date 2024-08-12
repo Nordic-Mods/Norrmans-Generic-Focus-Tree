@@ -1,3 +1,10 @@
 ﻿l_english:
  GENERIC_vanguard_of_the_revolution_sub_ideology_change_tt:0 "Your §YSub-Ideology§! will change to §YLeninism§!."
  GENERIC_communism_at_home_sub_ideology_change_tt:0 "Your §YSub-Ideology§! will change to §YMarxism§!."
+ GENERIC_communist_europe_faction_tt:0 "There is a §YCommunist Faction Leader§! in §YEurope§!"
+ GENERIC_communist_north_america_faction_tt:0 "There is a §YCommunist Faction Leader§! in §YNorth America§!"
+ GENERIC_communist_south_america_faction_tt:0 "There is a §YCommunist Faction Leader§! in §YSouth America§!"
+ GENERIC_communist_africa_faction_tt:0 "There is a §YCommunist Faction Leader§! in §YAfrica§!"
+ GENERIC_communist_middle_east_faction_tt:0 "There is a §YCommunist Faction Leader§! in the §YMiddle East§!"
+ GENERIC_communist_australia_faction_tt:0 "There is a §YCommunist Faction Leader§! in §YOceania§!"
+ GENERIC_communist_asia_faction_tt:0 "There is a §YCommunist Faction Leader§! in §YAsia§!"

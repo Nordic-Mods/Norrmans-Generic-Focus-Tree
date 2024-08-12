@@ -56,6 +56,7 @@
  GENERIC_socialist_industrial_planning_idea:0 "Socialist Industrial Planning"
  GENERIC_state_security_apparatus_idea:0 "State Security Apparatus"
  GENERIC_country_red_army_idea:0 "The [ROOT.GetAdjective] Red Army"
+ GENERIC_office_of_foreign_affairs:0 "Office of Foreign Affairs"
 
  #Decisions
  GENERIC_the_country_red_army_decision_category:0 "The [ROOT.GetAdjective] Red Army"
