@@ -514,8 +514,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 
-		available_if_capitulated = yes
-
 		available = {
 			if = {
 				limit = {
@@ -903,8 +901,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-
-		available_if_capitulated = yes
 		
 		completion_reward = {
 			if = {
