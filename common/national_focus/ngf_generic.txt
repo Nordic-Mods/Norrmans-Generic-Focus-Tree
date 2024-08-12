@@ -901,6 +901,135 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
+
+		available = {
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_europe_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = europe
+						}
+						has_government = communism
+						is_faction_leader = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = north_america
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_north_america_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = north_america
+						}
+						has_government = communism
+						is_faction_leader = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = south_america
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_south_america_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = south_america
+						}
+						has_government = communism
+						is_faction_leader = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = africa
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_africa_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = africa
+						}
+						has_government = communism
+						is_faction_leader = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = middle_east
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_middle_east_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = middle_east
+						}
+						has_government = communism
+						is_faction_leader = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = australia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_australia_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = australia
+						}
+						has_government = communism
+						is_faction_leader = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_on_continent = asia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GENERIC_communist_asia_faction_tt
+					any_other_country = {
+						capital_scope = {
+							is_core_of = PREV
+							is_on_continent = asia
+						}
+						has_government = communism
+						is_faction_leader = no
+					}
+				}
+			}
+		}
 		
 		completion_reward = {
 			if = {
