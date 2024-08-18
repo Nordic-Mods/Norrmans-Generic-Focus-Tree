@@ -439,7 +439,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = GENERIC_fledgling_red_army_idea_1_0
-			unlock_decision_category_tooltip = GENERIC_the_country_red_army_decision_category
+			custom_effect_tooltip = GENERIC_communist_country_red_army_decisions_improve_tt
 		}
 	}
 	focus = {
@@ -644,6 +644,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			set_rule = {
+				can_join_factions = yes
+			}
 			if = { # Europe
 				limit = {
 					ROOT = {
@@ -884,12 +887,72 @@ focus_tree = {
 		prerequisite = { focus = GENERIC_the_communist_cause }
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 150
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine 
+			}
+			if = {
+				limit = {
+					any_state = {
+						is_owned_and_controlled_by = ROOT
+						is_coastal = yes
+					}
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 2
+					category = naval_doctrine 
+				}
+				navy_experience = 25
+			}		
+			army_experience = 25
+			every_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				add_tech_bonus = {
+					name = infantry_artillery_bonus
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.25
+					uses = 2
+					category = land_doctrine 
+				}
+				if = {
+					limit = {
+						PREV = {
+							any_state = {
+								is_owned_and_controlled_by = PREV
+								is_coastal = yes
+							}
+						}
+					}
+					add_doctrine_cost_reduction = {
+						cost_reduction = 0.25
+						uses = 2
+						category = naval_doctrine 
+					}
+					navy_experience = 25
+				}
+				army_experience = 25
+			}
 		}
 	}
 	focus = {
@@ -907,6 +970,9 @@ focus_tree = {
 				limit = {
 					capital_scope = {
 						is_on_continent = europe
+					}
+					NOT = {
+						has_war_with = ROOT
 					}
 				}
 				custom_trigger_tooltip = {
@@ -929,6 +995,9 @@ focus_tree = {
 					capital_scope = {
 						is_on_continent = north_america
 					}
+					NOT = {
+						has_war_with = ROOT
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_north_america_minor_faction_tt
@@ -949,6 +1018,9 @@ focus_tree = {
 				limit = {
 					capital_scope = {
 						is_on_continent = south_america
+					}
+					NOT = {
+						has_war_with = ROOT
 					}
 				}
 				custom_trigger_tooltip = {
@@ -971,6 +1043,9 @@ focus_tree = {
 					capital_scope = {
 						is_on_continent = africa
 					}
+					NOT = {
+						has_war_with = ROOT
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_africa_minor_faction_tt
@@ -991,6 +1066,9 @@ focus_tree = {
 				limit = {
 					capital_scope = {
 						is_on_continent = middle_east
+					}
+					NOT = {
+						has_war_with = ROOT
 					}
 				}
 				custom_trigger_tooltip = {
@@ -1013,6 +1091,9 @@ focus_tree = {
 					capital_scope = {
 						is_on_continent = australia
 					}
+					NOT = {
+						has_war_with = ROOT
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_australia_minor_faction_tt
@@ -1034,6 +1115,9 @@ focus_tree = {
 					capital_scope = {
 						is_on_continent = asia
 					}
+					NOT = {
+						has_war_with = ROOT
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = GENERIC_communist_asia_minor_faction_tt
@@ -1053,6 +1137,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			set_rule = {
+				can_join_factions = yes
+			}
+			set_rule = {
+				can_create_factions = yes
+			}
 			if = {
 				limit = {
 					capital_scope = {
@@ -1216,26 +1306,26 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GENERIC_reach_out_to_our_neighbours
+		id = GENERIC_empower_the_workers
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		relative_position_id = GENERIC_our_internationale
 		prerequisite = { focus = GENERIC_our_internationale }
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			unlock_decision_category_tooltip = GENERIC_influence_our_neighbours_decision_category
+			add_ideas = GENERIC_empowered_workers
 		}
 	}
 	focus = {
 		id = GENERIC_spreading_the_revolution
 		icon = GFX_focus_ger_great_red_menace
-		relative_position_id = GENERIC_reach_out_to_our_neighbours
-		prerequisite = { focus = GENERIC_reach_out_to_our_neighbours focus = GENERIC_strengthen_our_alliance }
+		relative_position_id = GENERIC_empower_the_workers
+		prerequisite = { focus = GENERIC_empower_the_workers focus = GENERIC_strengthen_our_alliance }
 		prerequisite = { focus = GENERIC_socialist_research_institute }
 
 		x = -2

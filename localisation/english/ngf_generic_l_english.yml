@@ -28,8 +28,8 @@
  GENERIC_strengthen_our_alliance_def:0 ""
  GENERIC_socialist_research_institute:0 "Socialist Research Institute"
  GENERIC_socialist_research_institute_def:0 ""
- GENERIC_reach_out_to_our_neighbours:0 "Reach Out to Our Neighbours"
- GENERIC_reach_out_to_our_neighbours_def:0 ""
+ GENERIC_empower_the_workers:0 "Empower the Workers"
+ GENERIC_empower_the_workers_def:0 ""
  GENERIC_spreading_the_revolution:0 "Spreading the Revolution"
  GENERIC_spreading_the_revolution_def:0 ""
  GENERIC_root_out_rightist_sympathizers:0 "Root Out Rightist Sympathizers"
@@ -57,7 +57,16 @@
  GENERIC_state_security_apparatus_idea:0 "State Security Apparatus"
  GENERIC_country_red_army_idea:0 "The [ROOT.GetAdjective] Red Army"
  GENERIC_office_of_foreign_affairs:0 "Office of Foreign Affairs"
+ GENERIC_empowered_workers:0 "Empowered Workers"
 
  #Decisions
  GENERIC_the_country_red_army_decision_category:0 "The [ROOT.GetAdjective] Red Army"
+ GENERIC_spreading_the_revolution_decision_category:0 "Spreading the Revolution"
+ GENERIC_spread_the_revolution_to_country_europe:0 "Spread the Revolution to [FROM.GetNameDef]"
+ GENERIC_spread_the_revolution_to_country_north_america:0 "Spread the Revolution to [FROM.GetNameDef]"
+ GENERIC_spread_the_revolution_to_country_south_america:0 "Spread the Revolution to [FROM.GetNameDef]"
+ GENERIC_spread_the_revolution_to_country_africa:0 "Spread the Revolution to [FROM.GetNameDef]"
+ GENERIC_spread_the_revolution_to_country_middle_east:0 "Spread the Revolution to [FROM.GetNameDef]"
+ GENERIC_spread_the_revolution_to_country_asia:0 "Spread the Revolution to [FROM.GetNameDef]"
+ GENERIC_spread_the_revolution_to_country_australia:0 "Spread the Revolution to [FROM.GetNameDef]"
 

@@ -159,5 +159,20 @@ ideas = {
                 civil_war_involvement_tension = 0.35
             }
         }
+        GENERIC_empowered_workers = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+				communism_drift = 0.03
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+            }
+        }
     }
 }

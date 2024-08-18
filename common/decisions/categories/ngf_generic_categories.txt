@@ -13,8 +13,8 @@ GENERIC_the_country_red_army_decision_category = {
         }
     }
 }
-GENERIC_influence_our_neighbours_decision_category = {
-    priority = 200
+GENERIC_spreading_the_revolution_decision_category = {
+    priority = 100
 
     icon = SOV_paranoia
 
@@ -23,8 +23,6 @@ GENERIC_influence_our_neighbours_decision_category = {
     }
 
     visible = {
-        ROOT = {
-            has_completed_focus = GENERIC_reach_out_to_our_neighbours
-        }
+        has_completed_focus = GENERIC_spreading_the_revolution
     }
 }
