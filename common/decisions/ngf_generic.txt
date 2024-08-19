@@ -61,7 +61,7 @@ GENERIC_spreading_the_revolution_decision_category = {
     
         days_remove = 45
 
-        war_with_target_on_remove = FROM   
+        war_with_target_on_remove = yes   
     
         remove_effect = {
             create_wargoal = {
@@ -107,7 +107,7 @@ GENERIC_spreading_the_revolution_decision_category = {
     
         days_remove = 45
 
-        war_with_target_on_remove = FROM   
+        war_with_target_on_remove = yes   
     
         remove_effect = {
             create_wargoal = {
@@ -153,7 +153,7 @@ GENERIC_spreading_the_revolution_decision_category = {
     
         days_remove = 45
 
-        war_with_target_on_remove = FROM   
+        war_with_target_on_remove = yes   
     
         remove_effect = {
             create_wargoal = {
@@ -199,7 +199,7 @@ GENERIC_spreading_the_revolution_decision_category = {
     
         days_remove = 45
 
-        war_with_target_on_remove = FROM   
+        war_with_target_on_remove = yes   
     
         remove_effect = {
             create_wargoal = {
@@ -245,7 +245,7 @@ GENERIC_spreading_the_revolution_decision_category = {
     
         days_remove = 45
 
-        war_with_target_on_remove = FROM   
+        war_with_target_on_remove = yes   
     
         remove_effect = {
             create_wargoal = {
@@ -291,7 +291,7 @@ GENERIC_spreading_the_revolution_decision_category = {
     
         days_remove = 45
 
-        war_with_target_on_remove = FROM   
+        war_with_target_on_remove = yes   
     
         remove_effect = {
             create_wargoal = {
@@ -337,7 +337,7 @@ GENERIC_spreading_the_revolution_decision_category = {
     
         days_remove = 45
 
-        war_with_target_on_remove = FROM   
+        war_with_target_on_remove = yes   
     
         remove_effect = {
             create_wargoal = {

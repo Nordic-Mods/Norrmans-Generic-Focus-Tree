@@ -53,11 +53,15 @@
  GENERIC_empower_the_unions_idea:0 "Empower the Unions"
  GENERIC_stabilize_the_new_government_idea:0 "Stabilize the New Government"
  GENERIC_socialist_reeducation_campaign_idea:0 "Socialist Re-education Campaign"
+ GENERIC_root_out_rightist_sympathizers_idea:0 "Root Out Rightist Sympathizers"
  GENERIC_socialist_industrial_planning_idea:0 "Socialist Industrial Planning"
  GENERIC_state_security_apparatus_idea:0 "State Security Apparatus"
  GENERIC_country_red_army_idea:0 "The [ROOT.GetAdjective] Red Army"
  GENERIC_office_of_foreign_affairs:0 "Office of Foreign Affairs"
  GENERIC_empowered_workers:0 "Empowered Workers"
+ GENERIC_communist_country_autarky:0 "[ROOT.GetAdjective] Autarky"
+ GENERIC_foreign_deterrence:0 "Foreign Deterrence"
+ GENERIC_every_farmer_a_soldier_idea:0 "Every Farmer a Soldier"
 
  #Decisions
  GENERIC_the_country_red_army_decision_category:0 "The [ROOT.GetAdjective] Red Army"

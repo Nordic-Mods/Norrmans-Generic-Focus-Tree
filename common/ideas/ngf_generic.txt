@@ -45,6 +45,22 @@ ideas = {
                 stability_factor = -0.05
             }
         }
+        GENERIC_root_out_rightist_sympathizers_idea = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                democratic_drift = -0.1
+                fascism_drift = -0.1
+                neutrality_drift = -0.1
+                stability_factor = -0.05
+            }
+        }
         GENERIC_socialist_industrial_planning_idea = {
             allowed = {
                 always = no
@@ -61,7 +77,7 @@ ideas = {
             }
         }
         GENERIC_state_security_apparatus_idea = {
-                name = GENERIC_country_red_army_idea
+
             allowed = {
                 always = no
             }
@@ -172,6 +188,73 @@ ideas = {
 				communism_drift = 0.03
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
+            }
+        }
+        GENERIC_communist_country_autarky = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                min_export = -0.3
+                local_resources = 0.25
+            }
+        }
+        GENERIC_foreign_deterrence = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                production_speed_bunker_factor = 0.25 
+                production_speed_coastal_bunker_factor = 0.25
+                land_bunker_effectiveness_factor = 0.1
+                coastal_bunker_effectiveness_factor = 0.1
+                enemy_justify_war_goal_time = 0.15
+            }
+        }
+        GENERIC_foreign_deterrence_two = {
+            allowed = {
+                always = no
+            }
+
+            name = GENERIC_foreign_deterrence
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                production_speed_bunker_factor = 0.25 
+                production_speed_coastal_bunker_factor = 0.25
+                land_bunker_effectiveness_factor = 0.1
+                coastal_bunker_effectiveness_factor = 0.1
+                enemy_justify_war_goal_time = 0.15
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+            }
+        }
+        GENERIC_every_farmer_a_soldier_idea = {
+            allowed = {
+                always = no
+            }
+
+            name = GENERIC_foreign_deterrence
+
+            removal_cost = -1
+
+            picture = generic_communism_drift_bonus
+
+            modifier = {
+                conscription = 0.035
             }
         }
     }

@@ -16,3 +16,4 @@
  GENERIC_communist_australia_minor_faction_tt:0 "There is a not §YMinor Communist Faction Leader§! in §YOceania§!"
  GENERIC_communist_asia_minor_faction_tt:0 "There is a not §YMinor Communist Faction Leader§! in §YAsia§!"
  GENERIC_communist_country_red_army_decisions_improve_tt:0 "Unlocks Decisions to §YImprove§! the §Y[ROOT.GetAdjective] Red Army§!"
+ GENERIC_communism_wargoal_generation_continent_tt:0 "Unlocks Decisions to §YGenerate Wargoals§! on §YNon-Communist Neighboring Countries§!"
