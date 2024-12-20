@@ -1,7 +1,7 @@
 focus_tree = {
 	id = norrmans_generic_focus_tree
 	country = {
-		base = 5
+		factor = 5
 	}
 
 	default = yes
